@@ -6,4 +6,4 @@ before_install:
     - docker build -t legperez/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run legperez/docker-react npm -- --coverage
+    - docker run legperez/docker-react npm run test -- --coverage
